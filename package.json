@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "ts-node src/bin/www.ts",
-    "dev": "nodemon --exec ts-node src/bin/www.ts"
+    "start": "node api.js && ts-node src/bin/www.ts",
+    "dev": "node api.js && nodemon --exec ts-node src/bin/www.ts"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
